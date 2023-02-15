@@ -6,7 +6,10 @@ Feature: Library app login feature
 
   Accounts : librarian, student, admin
 
-  @librarian @employee
+  Background: For the scenarios in this future file , user is excepted to be on login page
+  Given user is on the library login page
+
+  @librarian @employee @wip
   Scenario: Login as librarian
     When user enters librarian username
     And user enters librarian password
