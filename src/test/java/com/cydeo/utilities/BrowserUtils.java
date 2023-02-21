@@ -52,4 +52,12 @@ public class BrowserUtils {
         Assert.assertEquals(Driver.getDriver().getTitle(),exceptedTitle);
     }
 
+    /**
+     * This method will accept a String as expected value and verify actual URL contains the value
+     * @param exceptedInURL
+     */
+    public static void verifyURLContains(String exceptedInURL){
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(exceptedInURL));
+    }
+
 }
