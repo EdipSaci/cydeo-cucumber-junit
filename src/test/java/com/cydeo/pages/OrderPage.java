@@ -35,10 +35,10 @@ public class OrderPage extends BasePage {
     public WebElement inputZip;
 
     @FindBy(name = "card")
-    public List<WebElement> cardTypes;
+    public List<WebElement> cardType;
 
     @FindBy(name = "cardNo")
-    public WebElement cardInput;
+    public WebElement cardNoInput;
 
     @FindBy(name = "cardExp")
     public WebElement cardExpInput;
