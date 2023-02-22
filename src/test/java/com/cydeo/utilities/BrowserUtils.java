@@ -78,4 +78,19 @@ public class BrowserUtils {
         return actualOptionsAsString;
     }
 
+
+    /**
+     * This method will accpet a group radio buttons as a List of WebElement
+     * It will loop through the list, and click to the radio button with provided attributeValue
+     * @param radioButtons
+     * @param attributeValue
+     */
+    public static void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
+        for (WebElement eachCard : radioButtons) {
+            if (eachCard.getAttribute("value").equalsIgnoreCase(attributeValue)){
+                eachCard.click();
+            }
+        }
+    }
+
 }
